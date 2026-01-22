@@ -35,6 +35,23 @@ localization:
 .. image:: india/india-modules.png
    :alt: Indian localization modules
 
+.. _india/gsp_configuration:
+
+GSP Configuration
+=================
+
+To use the e-Invoicing and E-Way bill services in Odoo, you must first configure
+:guilabel:`BVM IT Consulting Services India Private Limited` as your :abbr:`GSP (GST Suvidha Provider)`.
+
+Go to :menuselection:`Accounting --> Configuration --> Settings --> Select GSP Provider` and select
+:guilabel:`BVM IT Consulting` as your GSP.
+
+   .. image:: india/gsp-configuration.png
+      :alt: GSP Configuration
+
+.. important::
+   If you do not see this option in your Settings, then update the :guilabel:`Indian - Accounting` `l10n_in` module.
+
 .. _india/e-invoicing:
 
 e-Invoice system
@@ -67,7 +84,7 @@ You must register on the :abbr:`NIC (National Informatics Centre)` e-Invoice por
    User`;
 #. After that, you should receive an :abbr:`OTP (one-time password)` code on your registered mobile
    number. Enter the OTP code and click :guilabel:`Verify OTP`;
-#. Select :guilabel:`Through GSP` for the API interface, set :guilabel:`Tera Software Limited` as
+#. Select :guilabel:`Through GSP` for the API interface, set :guilabel:`BVM IT Consulting Services India Private Limited` as
    GSP, and type in a :guilabel:`Username` and :guilabel:`Password` for your API. Once it is done,
    click :guilabel:`Submit`.
 
@@ -85,6 +102,8 @@ Settings --> Indian Electronic Invoicing`, and enter the :guilabel:`Username` an
 
 .. image:: india/e-invoice-setup.png
    :alt: Setup e-invoice service
+
+Make sure to configure GSP as explained in the :ref:`GSP Configuration <india/gsp_configuration>` section.
 
 .. _india/e-invoicing-journals:
 
@@ -201,13 +220,13 @@ You must register on the :abbr:`NIC (National Informatics Centre)` E-Way bill po
 #. From your dashboard, go to :menuselection:`Registration --> For GSP`;
 #. Click :guilabel:`Send OTP`. Once you have received the code on your registered mobile number,
    enter it and click :guilabel:`Verify OTP`;
-#. Check if :guilabel:`Tera Software Limited` is already on the registered GSP/ERP list. If so, use
+#. Check if :guilabel:`BVM IT Consulting Services India Private Limited` is already on the registered GSP/ERP list. If so, use
    the username and password used to log in to the NIC portal. Otherwise, follow the next steps;
 
    .. image:: india/e-waybill-gsp-list.png
       :alt: E-Way bill list of registered GSP/ERP
 
-#. Select :guilabel:`Add/New`, select :guilabel:`Tera Software Limited` as your GSP Name, create a
+#. Select :guilabel:`Add/New`, select :guilabel:`BVM IT Consulting Services India Private Limited` as your GSP Name, create a
    :guilabel:`Username` and a :guilabel:`Password` for your API, and click :guilabel:`Add`.
 
    .. image:: india/e-waybill-registration-details.png
@@ -224,6 +243,8 @@ To set up the E-Way bill service, go to :menuselection:`Accounting --> Configura
 
 .. image:: india/e-waybill-configuration.png
    :alt: E-way bill setup odoo
+
+Make sure to configure GSP as explained in the :ref:`GSP Configuration <india/gsp_configuration>` section.
 
 .. _india/e-waybill-workflow:
 
@@ -335,6 +356,8 @@ the :guilabel:`GST Username`. Click :guilabel:`Send OTP`, enter the code, and fi
 
    .. image:: india/gst-setup.png
       :alt: Please enter your GST portal Username as Username
+
+Make sure to configure GSP as explained in the :ref:`GSP Configuration <india/gsp_configuration>` section.
 
 .. _india/gstr_workflow:
 
