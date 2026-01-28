@@ -18,9 +18,11 @@ Plausible.io
 ============
 
 Odoo hosts its own Plausible.io server and provides a free and ready-to-use Plausible.io
-solution for **Odoo Online** databases that use the odoo.com domain. Odoo automatically creates and
-sets up your account. Start using it by going to :menuselection:`Website --> Reporting -->
-Analytics`.
+solution for **Odoo Online** databases that use the odoo.com domain.
+Enable it by going to :menuselection:`Website --> Configuration --> Settings`, then in the
+:guilabel:`Tracking & SEO` section, activate the :guilabel:`Plausible Analytics` option.
+Odoo automatically creates and sets up your account. Start using it by going to
+:menuselection:`Website --> Reporting --> Analytics`.
 
 .. note::
    - If you use a custom :doc:`domain name <../configuration/domain_names>` (e.g., `example.com`),
@@ -54,7 +56,7 @@ Plausible.io account, proceed as follows:
 
 #. Create or sign in to a Plausible.io account using the following link: `<https://plausible.io/register>`_.
 #. If you are creating a new account, go through the registration and activation steps.
-   On the :guilabel:`Add website info` page, add the :guilabel:`Domain` of your website without
+   On the :guilabel:`Add website info` page, enter your website :guilabel:`Domain` name without
    including `www` (e.g., `example.odoo.com`) and change the :guilabel:`Reporting Timezone`,
    if necessary. Click :guilabel:`Install Plausible` to proceed to the next step. Ignore the
    :guilabel:`Manual installation` instructions and click :guilabel:`Start collecting data`.
@@ -77,15 +79,15 @@ Plausible.io account, proceed as follows:
       :alt: Copy the shared link URL from Plausible.io
 
 #. In Odoo, go to :menuselection:`Website --> Configuration --> Settings`.
-#. In the :guilabel:`SEO` section, enable :guilabel:`Plausible Analytics`, then paste the
+#. In the :guilabel:`Tracking & SEO` section, enable :guilabel:`Plausible Analytics`, then paste the
    :guilabel:`Shared Link Auth` and click :guilabel:`Save`.
 
 .. tip::
-   If you have :doc:`multiple websites <../configuration/multi_website>`, add your websites to your
-   Plausible.io account by going to `<https://plausible.io/sites>`_ and clicking :guilabel:`+ Add
-   Website`. In Odoo, in the **Website settings**, make sure to select the website in the
-   :guilabel:`Settings of Website` field at the top of the page before pasting the
-   :guilabel:`Shared link`.
+   - If you have :doc:`multiple websites <../configuration/multi_website>`, add your websites to
+     your Plausible.io account by going to `<https://plausible.io/sites>`_ and clicking
+     :guilabel:`+ Add Website`.
+   - In the Odoo Website settings, please ensure that the correct website is selected from the
+     dropdown menu displayed at the top of the page.” before pasting the :guilabel:`Shared link`.
 
 .. note::
    Odoo automatically pushes two custom goals: `Lead Generation` and `Shop`.
