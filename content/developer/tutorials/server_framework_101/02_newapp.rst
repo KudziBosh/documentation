@@ -6,6 +6,7 @@ The purpose of this chapter is to lay the foundation for the creation of a compl
 We will start from scratch with the minimum needed to have our module recognized by Odoo.
 In the upcoming chapters, we will progressively add features to build a realistic business case.
 
+
 The Real Estate Advertisement module
 ====================================
 
